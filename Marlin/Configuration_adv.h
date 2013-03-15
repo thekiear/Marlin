@@ -51,8 +51,8 @@
 //#define EXTRUDER_RUNOUT_PREVENT  
 #define EXTRUDER_RUNOUT_MINTEMP 190  
 #define EXTRUDER_RUNOUT_SECONDS 30.
-#define EXTRUDER_RUNOUT_ESTEPS 14. //mm filament
-#define EXTRUDER_RUNOUT_SPEED 1500.  //extrusion speed
+#define EXTRUDER_RUNOUT_ESTEPS 14 //default 14 mm filament
+#define EXTRUDER_RUNOUT_SPEED 1500.  //defaul 1500extrusion speed
 #define EXTRUDER_RUNOUT_EXTRUDE 100
 
 //These defines help to calibrate the AD595 sensor in case you get wrong temperature measurements.
@@ -220,14 +220,14 @@
   #define EXTRUDER_ADVANCE_K .0
 
   #define D_FILAMENT 2.85
-  #define STEPS_MM_E 836
-  #define EXTRUTION_AREA (0.25 * D_FILAMENT * D_FILAMENT * 3.14159)
+  #define STEPS_MM_E 836//default 836
+  #define EXTRUTION_AREA (0.25 * D_FILAMENT * D_FILAMENT * 3.14159)// default 0.25
   #define STEPS_PER_CUBIC_MM_E (axis_steps_per_unit[E_AXIS]/ EXTRUTION_AREA)
 
 #endif // ADVANCE
 
 // Arc interpretation settings:
-#define MM_PER_ARC_SEGMENT 1
+#define MM_PER_ARC_SEGMENT 1//1
 #define N_ARC_CORRECTION 25
 
 const unsigned int dropsegments=5; //everything with less than this number of steps will be ignored as move and joined with the next movement
