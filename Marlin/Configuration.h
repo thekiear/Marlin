@@ -62,7 +62,7 @@
 #define DELTA_DIAGONAL_ROD 249.7 // mm
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET 169//168.5bb mm
+#define DELTA_SMOOTH_ROD_OFFSET 167//168.5bb mm
 
 // Horizontal offset of the universal joints on the end effector.
 #define DELTA_EFFECTOR_OFFSET 33.0 // mm
@@ -212,7 +212,7 @@
 //if PREVENT_DANGEROUS_EXTRUDE is on, you can still disable (uncomment) very long bits of extrusion separately.
 #define PREVENT_LENGTHY_EXTRUDE
 
-#define EXTRUDE_MINTEMP 170 //RETURN TO 170
+#define EXTRUDE_MINTEMP 160 //RETURN TO 170
 #define EXTRUDE_MAXLENGTH (X_MAX_LENGTH+Y_MAX_LENGTH) //prevent extrusion of very large distances.
 
 //===========================================================================
@@ -299,7 +299,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For deltabots this means top and center of the cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 397.6//bb402.8
+#define MANUAL_Z_HOME_POS 397.7//bb402.8
 
 
 
