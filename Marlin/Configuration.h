@@ -59,10 +59,10 @@
 #define DELTA_SEGMENTS_PER_SECOND 200
 
 // Center-to-center distance of the holes in the diagonal push rods.
-#define DELTA_DIAGONAL_ROD 249.7 // mm
+#define DELTA_DIAGONAL_ROD 250.0 // mm
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET 169//168.5bb mm
+#define DELTA_SMOOTH_ROD_OFFSET 171.5 //168.5bb mm
 
 // Horizontal offset of the universal joints on the end effector.
 #define DELTA_EFFECTOR_OFFSET 33.0 // mm
@@ -287,6 +287,8 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define Z_MAX_POS 620
 #define Z_MIN_POS 0
 
+// jdrvd@hotmail.com Juan & Alice
+
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
 #define Y_MAX_LENGTH (Y_MAX_POS - Y_MIN_POS)
 #define Z_MAX_LENGTH (Z_MAX_POS - Z_MIN_POS)
@@ -299,7 +301,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For deltabots this means top and center of the cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 397.6//bb402.8
+#define MANUAL_Z_HOME_POS 402.9 //bb402.8
 
 
 
@@ -312,12 +314,14 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {40, 40, 40,660}
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 300, 300}  // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000, 3000, 3000, 3000}    // X, Y, Z, E maximum start speed for accelerated moves.
+// old wades #define DEFAULT_AXIS_STEPS_PER_UNIT   {40, 40, 40, 500} 
 
-#define DEFAULT_ACCELERATION          3000   // X, Y, Z and E max acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {40, 40, 40, 875}
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 300, 300}  // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {5000, 5000, 5000, 5000}    // X, Y, Z, E maximum start speed for accelerated moves.
+
+#define DEFAULT_ACCELERATION          15000   // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  5000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // 
 #define DEFAULT_XYJERK                20.0   // (mm/sec)
