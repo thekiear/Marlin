@@ -62,7 +62,7 @@
 #define DELTA_DIAGONAL_ROD 249.7 // mm
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET 167//168.5bb mm
+#define DELTA_SMOOTH_ROD_OFFSET 170.3//168.5bb mm
 
 // Horizontal offset of the universal joints on the end effector.
 #define DELTA_EFFECTOR_OFFSET 33.0 // mm
@@ -299,7 +299,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For deltabots this means top and center of the cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 397.7//bb402.8
+#define MANUAL_Z_HOME_POS 397.65  //bb402.8
 
 
 
